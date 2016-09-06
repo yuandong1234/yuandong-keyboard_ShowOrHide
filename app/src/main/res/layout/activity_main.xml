@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/lin_reply_operation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:padding="12dip"
+        android:gravity="center_vertical"
+        >
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/base_edit_bg"
+            android:hint="想写点什么呢..."
+            android:inputType="text"
+            android:paddingLeft="8dip"
+            android:textSize="13sp"
+            android:lines="3"
+            android:singleLine="false"
+            android:minHeight="34dp"
+            android:maxHeight="54dp"
+            />
+        <Button
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/login_red_bg"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:text="发送"
+            android:clickable="true"
+            >
+        </Button>
+
+    </LinearLayout>
+</RelativeLayout>
